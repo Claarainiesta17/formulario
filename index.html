@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Buscoempleo</title>
+        <link rel="stylesheet" type="text/css" href="style-formulario.css">
+    </head>
+    <body>
+        <form id="miFormulario" name="miFormulario" method="post" action="formulario.php">
+            <h1 class="titulo">Registrarse a Buscoempleo</h1>
+              <fieldset class="primero">
+                 <legend class="datos">Datos Personales</legend>
+                 Nombre: <input type="text" id="txtNombre" name="txtNombre" />
+                 Apellidos: <input type="text" id="txtApellidos" name="txtApellidos" />
+                 Edad: <input type="text" id"txtEdad" name="txtEdad"/>
+                 Ciudad: <input type="text" id"txtCiudad" name="txtCiudad"/>
+                 Código Postal: <input type="text" id"txtCodigoPostal" name="txtCodigoPostal"/>
+              </fieldset>
+              <fieldset class="segundo">
+                 <legend class="nivel">Nivel de estudios finalizados</legend>
+                 <input type="radio" id="opc1" name="grupo" value="A" /> Educación secundaria
+                 <input type="radio" id="opc2" name="grupo" value="B" checked /> Bachiller
+                 <input type="radio" id="opc3" name="grupo" value="C" /> Grado universitario
+                 <input type="radio" id="opc4" name="grupo" value="D" /> Máster
+                 <input type="radio" id="opc5" name="grupo" value="E" /> Doctorado
+                 <input type="radio" id="opc6" name="grupo" value="F" /> Formación Profesional
+              </fieldset>
+              <fieldset class="tercero">
+                  <legend class="idiomas">Idiomas</legend>
+              Idioma 1:<br/>
+              <select id="sel1" name="sel1">
+                <option value="11">Castellano</option>
+                <option value="22" selected>Inglés</option>
+                <option value="33">Catalán</option>
+                <option value="44">Francés</option>
+                <option value="55">Alemán</option>
+                <option value="66">Italiano</option>
+              </select><p/>
+              Idioma 2:<br/>
+              <select id="sel1" name="sel1">
+                <option value="11">Castellano</option>
+                <option value="22" selected>Inglés</option>
+                <option value="33">Catalán</option>
+                <option value="44">Francés</option>
+                <option value="55">Alemán</option>
+                <option value="66">Italiano</option>
+              </select><p/>
+              Idioma 3:<br/>
+              <select id="sel1" name="sel1">
+                <option value="11">Castellano</option>
+                <option value="22" selected>Inglés</option>
+                <option value="33">Catalán</option>
+                <option value="44">Francés</option>
+                <option value="55">Alemán</option>
+                <option value="66">Italiano</option>
+            </select><p/>
+              Idioma 4:<br/>
+              <select id="sel1" name="sel1">
+                <option value="11">Castellano</option>
+                <option value="22" selected>Inglés</option>
+                <option value="33">Catalán</option>
+                <option value="44">Francés</option>
+                <option value="55">Alemán</option>
+                <option value="66">Italiano</option>
+              </select><p/>
+            </fieldset>
+              <fieldset class="cuarto">
+                 <legend class="experiencia">Experiencia laboral</legend>
+                 <textarea id="txtComent" name="txtComent" cols="50" rows="5"></textarea>
+              </fieldset><p/>
+            <fieldset class="legend">
+               <legend class="CV">Carga tu CV aquí</legend>
+              <form id="miFormulario" name="miFormulario" method="post" enctype="multipart/form-data" action="formulario.php" >
+                <input type="file" id="fArchivo" name="fArchivo" size="50" /><br/>
+            </fieldset>
+            <input type="submit" id="btnEnviar" name="btnEnviar" value="Enviar" />
+        </form>
+    </body>
+</html>
